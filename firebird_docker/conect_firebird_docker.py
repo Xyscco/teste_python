@@ -1,7 +1,7 @@
 import fdb
 # from core.database_connection import conectar_banco
 
-consulta = "SELECT * FROM PRODUTO"
+consulta = "SELECT * FROM PRODUTO WHERE PRK = 1"
 
 def conectar_banco(tipo_banco, nome_banco, porta=None):
     # Função fictícia para simular a conexão com o banco de dados
@@ -18,7 +18,7 @@ def conectar_banco(tipo_banco, nome_banco, porta=None):
         raise ValueError("Tipo de banco não suportado")
 
 try:
-    conexao = conectar_banco('firebird', '/firebird/data/unifar.fdb', porta=3050)
+    conexao = conectar_banco('firebird', '/firebird/data/TEKFARMA.fdb', porta=3050)
     print('Conexão estabelecida com sucesso')
 
     cursor = conexao.cursor()
