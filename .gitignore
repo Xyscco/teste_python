@@ -111,3 +111,5 @@ ehthumbs.db
 Desktop.ini
 
 .venv
+
+*.fdb
